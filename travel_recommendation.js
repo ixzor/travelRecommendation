@@ -34,7 +34,7 @@ function searchCondition() {
                 }
             }
         } else {
-            resultDiv.innerHTML = 'Condition not found.';
+            resultDiv.innerHTML = 'Place not found.';
         }
         })
         .catch(error => {
@@ -54,3 +54,14 @@ function clearSearch() {
 }
 
 btnClear.addEventListener('click', clearSearch);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop the form from submitting to a server
+
+        // Clear the form inputs
+        form.reset();
+    });
+});
