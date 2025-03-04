@@ -1,0 +1,284 @@
+/* Basic CSS for the navigation bar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navTitle {
+    color: #0b818a;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Styling the search bar */
+#conditionInput {
+    padding: 10px;
+    border: 2px solid #0b818a;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 250px;
+    transition: 0.3s ease-in-out;
+}
+
+#conditionInput:focus {
+    outline: none;
+    border-color: #0b818a;
+    box-shadow: 0px 0px 10px rgba(0, 91, 187, 0.5);
+}
+
+/* Styling the buttons */
+#btnSearch, #btnReset {
+    font-family: 'Arial';
+    padding: 10px 15px;
+    border: none;
+    background-color: #0b818a;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnSearch:hover, #btnReset:hover {
+    background-color: #0b818a;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'Arial';
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0b818a;
+    font-weight: bold;
+}
+
+/* Background styling */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('travelhome.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+#main-container {
+    overflow: hidden;
+    width:100%;
+    padding: 20px; /* Add some padding around */
+}
+
+/* Centered content with better readability */
+.content {
+    float: left;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 20px 0 0; /* Move to the left slightly */
+    top: 0; /* Remove the top adjustment */
+    transform: translate(0, 0); /* Reset the translate to keep it in place */
+}
+
+
+/* Making the paragraph text larger */
+.content p {
+    font-size: 1.5rem;
+}
+
+.about {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    top: 30%;
+    transform: translate(-40%, 10%); /* Moves the box slightly left */
+}
+
+.about-heading {
+    position: relative;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    font-family: "papyrus", Times, serif;
+    color: white;
+    text-align: left;
+    font-size: 5rem;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    top: 30%;
+    transform: translate(-40%, 10%); /* Moves the box slightly left */
+}
+
+.about-text {
+    font-size: 1.5rem;
+
+}
+
+.team {
+    margin-top: 40px;
+    
+    text-align: center;
+}
+
+.team h2 {
+    font-family: "papyrus", Times, serif;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.team-member h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Container for Contact Us Header and Form */
+.contact-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end; /* Align the form to the right */
+    margin-top: 40px;
+    margin-right: 20px;
+
+}
+
+/* Form Styling */
+.form-container {
+    width: 48%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add space between header and form */
+}
+
+.form-container label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b818a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.form-container button:hover {
+    background-color: #0b818a;
+}
+
+
+/* Style for the search result container */
+#result {
+    visibility: hidden;
+    margin-top: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #dddddd00;
+    border-radius: 8px;
+    width: 50%; /* Adjust the width as needed */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+/* Style for individual search result items */
+.searchRes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b818a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Style for result titles (names) */
+.searchNames {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Style for result descriptions */
+.searchText {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+
+/* Style for the "not found" message */
+#result.notFound {
+    text-align: center;
+    color: #f44336;
+    font-weight: bold;
+}
+#result img {
+    max-width: 100%;
+    height: auto;
+}
+
